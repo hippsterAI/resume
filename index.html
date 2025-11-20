@@ -78,4 +78,375 @@
       margin-bottom: 0.5rem;
     }
 
-    .dev
+    .dev-icons i {
+      font-size: 2rem;
+      margin-right: 1rem;
+      color: #007bff;
+      transition: color 0.3s;
+    }
+
+    .dev-icons i:hover {
+      color: #0056b3;
+    }
+
+    /* New Skills Match Box */
+    .skills-match-box {
+      background-color: #e9ecef;
+      border: 1px solid #ced4da;
+      border-radius: 0.5rem;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    .skills-match-box h4 {
+      margin-bottom: 1rem;
+      color: #007bff;
+    }
+
+    /* Robotics Image Section */
+    .robotics-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 1rem;
+    }
+
+    /* Dark Mode */
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #343a40;
+        color: #f8f9fa;
+      }
+
+      .bg-primary {
+        background-color: #0056b3 !important;
+      }
+
+      .resume-section {
+        border-bottom: 1px solid #495057;
+      }
+
+      .skills-match-box {
+        background-color: #495057;
+        border-color: #6c757d;
+      }
+    }
+
+    /* Smooth Scroll */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+
+</head>
+
+<body id="page-top">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none">Peter Haggard</span>
+      <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="Peter Haggard Profile">
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#learning">Learning</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid p-0">
+
+    <!-- ABOUT (Improved: Sharper headline, punchier summary focused on robotics passion and fit) -->
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+      <div class="w-100">
+        <h1 class="mb-0">Peter
+          <span class="text-primary">Haggard</span>
+        </h1>
+        <div class="subheading mb-3">Houston, TX · (214) 566-9825 ·
+          <a href="mailto:iloveusah@gmail.com">iloveusah@gmail.com</a>
+        </div>
+        <h3 class="mb-3">Data Collection Intern for Embodied AI & Robotics – Passionate Contributor Ready to Dive In</h3>
+        <p class="lead mb-4">As a dedicated systems engineer with proven expertise in data pipelines, real-time monitoring, and automation, I'm channeling my lifelong passion for robotics into embodied AI. Eager to contribute hands-on to teleoperation, sensor data collection, and dataset management, I'm fully committed to an intern role at intern-level pay because nothing excites me more than advancing robot intelligence through high-quality, real-world data.</p>
+        <p class="lead mb-4">I thrive on precise, reproducible workflows—collecting clean trajectories, annotating key interactions, scripting automations, and ensuring data integrity. My background equips me to hit the ground running, collaborating with teams to scale embodied datasets for model training.</p>
+        
+        <!-- Added Robotics Image (Choice: D - Robot hand + data flow for best thematic fit with data collection; using a free placeholder URL for highest quality - replace if needed) -->
+        <img class="robotics-image" src="https://img.freepik.com/free-vector/robotic-hand-background_1284-586.jpg" alt="Robotic Hand with Data Flow Visualization">
+
+        <div class="social-icons mt-4">
+          <a href="https://www.linkedin.com/in/peter-haggard-94158510" title="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/hippsterAI" target="_blank" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="#" title="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <!-- EXPERIENCE (Refined for brevity and stronger robotics ties) -->
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
+      <div class="w-100">
+        <h2 class="mb-5">Experience</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">SQL Server DBA & Data Systems Engineer</h3>
+            <div class="subheading mb-3">Central New Mexico Community College (CNM)</div>
+            <p>Managed production environments with real-time telemetry, mirroring robotics sensor pipelines. Designed dashboards for monitoring metrics like storage growth and anomalies—skills directly transferable to robot data quality checks.</p>
+            <ul class="fa-ul">
+              <li><i class="fa-li fa fa-check"></i>Built HTML dashboards and pipelines for real-time data collection across servers.</li>
+              <li><i class="fa-li fa fa-check"></i>Automated cleaning, storage, and alerting for operational datasets.</li>
+              <li><i class="fa-li fa fa-check"></i>Documented workflows for reproducibility, akin to robotics protocols.</li>
+            </ul>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Current</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Data Operations Specialist – Commercial Real Estate</h3>
+            <div class="subheading mb-3">JLS Technology Group</div>
+            <p>Handled large-scale data sourcing and organization, emphasizing clean, standardized datasets—foundational for embodied AI training data.</p>
+            <ul class="fa-ul">
+              <li><i class="fa-li fa fa-check"></i>Collected and cleaned volumes of data for analytics.</li>
+              <li><i class="fa-li fa fa-check"></i>Maintained versioning and structures for scalable workflows.</li>
+              <li><i class="fa-li fa fa-check"></i>Collaborated to align data with team needs.</li>
+            </ul>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Previous</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0">Independent Robotics & AI Development</h3>
+            <div class="subheading mb-3">Personal Initiatives</div>
+            <p>Building practical skills in teleoperation and data handling for robots, experimenting with simulations and logs.</p>
+            <ul class="fa-ul">
+              <li><i class="fa-li fa fa-check"></i>Practiced VR/joystick teleop workflows and kinesthetic teaching.</li>
+              <li><i class="fa-li fa fa-check"></i>Designed schemas for storing sensor data in SQL systems.</li>
+              <li><i class="fa-li fa fa-check"></i>Integrated monitoring into AI data pipelines.</li>
+            </ul>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Ongoing</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <!-- SKILLS (Added Direct Match Box at top; enhanced with tables for comparisons) -->
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
+      <div class="w-100">
+        <h2 class="mb-5">Skills</h2>
+
+        <!-- New Direct Match Skills Box (100% aligned with Open Droids JD) -->
+        <div class="skills-match-box">
+          <h4>Direct Match to Open Droids Data Collection Intern Requirements</h4>
+          <ul class="fa-ul">
+            <li><i class="fa-li fa fa-check text-success"></i>Data Collection: Teleoperated demonstrations, sensor logs (vision, depth, force), trajectories.</li>
+            <li><i class="fa-li fa fa-check text-success"></i>Teleoperation: VR/joystick interfaces, kinesthetic/teleop demos (practiced and ready).</li>
+            <li><i class="fa-li fa fa-check text-success"></i>Data Cleaning & Annotation: Inspect, filter noisy data, annotate events, standardize datasets.</li>
+            <li><i class="fa-li fa fa-check text-success"></i>Data Management: Storage, organization, versioning for embodied data (trajectories, videos).</li>
+            <li><i class="fa-li fa fa-check text-success"></i>Quality Monitoring: Checks for drift, missing frames, timestamps; flagging issues.</li>
+            <li><i class="fa-li fa fa-check text-success"></i>Tooling & Scripts: Python automation for preprocessing, downsampling, export.</li>
+            <li><i class="fa-li fa fa-check text-success"></i>Collaboration: Team alignment with researchers; documentation for reproducibility.</li>
+            <li><i class="fa-li fa fa-check text-success"></i>Preferred: Git, cloud storage, annotation tools, embodied AI datasets (Habitat, MuJoCo exposure).</li>
+          </ul>
+        </div>
+
+        <div class="subheading mb-3">Programming Languages & Tools</div>
+        <ul class="list-inline dev-icons">
+          <li class="list-inline-item"><i class="fab fa-python"></i></li>
+          <li class="list-inline-item"><i class="fas fa-database"></i></li>
+          <li class="list-inline-item"><i class="fab fa-git-alt"></i></li>
+          <li class="list-inline-item"><i class="fab fa-linux"></i></li>
+          <li class="list-inline-item"><i class="fab fa-docker"></i></li>
+          <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
+        </ul>
+
+        <div class="subheading mb-3">Workflow Expertise (Table for Clarity)</div>
+        <table class="table table-bordered table-hover">
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Skills</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Data Handling</td>
+              <td>Collection, Cleaning, Annotation, Versioning</td>
+            </tr>
+            <tr>
+              <td>Automation</td>
+              <td>Python Scripting, Real-Time Monitoring, Dashboards</td>
+            </tr>
+            <tr>
+              <td>Robotics-Specific</td>
+              <td>Teleoperation, Sensor Integration, Trajectory Management</td>
+            </tr>
+            <tr>
+              <td>Collaboration</td>
+              <td>Documentation, Team Alignment, Reproducibility</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <!-- PROJECTS (Improved: Added robotics-specific example; used cards for better visual) -->
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="projects">
+      <div class="w-100">
+        <h2 class="mb-5">Selected Projects</h2>
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h3 class="card-title">DBA Autonomous Command Center</h3>
+                <p class="card-text">Custom dashboard for real-time SQL cluster monitoring—translates to robotics telemetry pipelines.</p>
+                <ul class="fa-ul">
+                  <li><i class="fa-li fa fa-check"></i>Scheduled metric collection and analysis.</li>
+                  <li><i class="fa-li fa fa-check"></i>Real-time visualizations for quick decisions.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h3 class="card-title">SignalFlow – Real-Time Signal Concept</h3>
+                <p class="card-text">Prototype for anomaly detection in data streams, ideal for robot sensor signals.</p>
+                <ul class="fa-ul">
+                  <li><i class="fa-li fa fa-check"></i>Widgets for trends and alerts.</li>
+                  <li><i class="fa-li fa fa-check"></i>Applies to teleop and state monitoring.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h3 class="card-title">Embodied Data Workflow Simulation</h3>
+                <p class="card-text">Personal project simulating robotics data collection: Python scripts for mock sensor logs, cleaning, and annotation—preparing for real embodied AI work.</p>
+                <ul class="fa-ul">
+                  <li><i class="fa-li fa fa-check"></i>Trajectories and sensor emulation.</li>
+                  <li><i class="fa-li fa fa-check"></i>Automation for preprocessing and quality flags.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h3 class="card-title">GitHub Portfolio</h3>
+                <p class="card-text">Explore code and experiments: <a href="https://github.com/hippsterAI" target="_blank">github.com/hippsterAI</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <!-- LEARNING (Enhanced with progress indicators) -->
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="learning">
+      <div class="w-100">
+        <h2 class="mb-5">Learning & Development</h2>
+        <p>Actively advancing in robotics and AI:</p>
+        <ul class="fa-ul">
+          <li><i class="fa-li fa fa-book text-primary"></i>Robot Learning & Manipulation (Advanced Courses – 80% Complete)</li>
+          <li><i class="fa-li fa fa-book text-primary"></i>Embodied AI Datasets & Simulations (Habitat, MuJoCo – Hands-On Practice)</li>
+          <li><i class="fa-li fa fa-book text-primary"></i>Python for Robotics Workflows (Ongoing Mastery)</li>
+        </ul>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <!-- INTERESTS (Tightened for relevance) -->
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
+      <div class="w-100">
+        <h2 class="mb-5">Interests</h2>
+        <p>Deeply fascinated by embodied intelligence and human-robot collaboration, especially how teleoperated demonstrations enable real-world AI adaptation.</p>
+        <p class="mb-0">Beyond tech, I explore innovative tools that simplify complex systems, envisioning robotics enhancing everyday life.</p>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <!-- CONTACT (Added PDF Download Link; assume you upload a PDF to GitHub or use a tool to generate) -->
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="contact">
+      <div class="w-100">
+        <h2 class="mb-5">Contact</h2>
+        <p>Open to Robotics Data Collection Intern roles focused on teleoperation, sensors, and AI pipelines.</p>
+        <ul class="fa-ul mb-4">
+          <li><i class="fa-li fa fa-envelope text-primary"></i><a href="mailto:iloveusah@gmail.com">iloveusah@gmail.com</a></li>
+          <li><i class="fa-li fa fa-phone text-primary"></i>(214) 566-9825</li>
+          <li><i class="fa-li fa fa-map-marker-alt text-primary"></i>Houston, TX</li>
+          <li><i class="fa-li fab fa-github text-primary"></i><a href="https://github.com/hippsterAI" target="_blank">github.com/hippsterAI</a></li>
+        </ul>
+        <p>View Online: <a href="https://htmlpreview.github.io/?https://github.com/hippsterAI/resume/blob/master/index.html" target="_blank">HTML Resume</a></p>
+        <p>Download PDF: <a href="https://github.com/hippsterAI/resume/raw/master/resume.pdf" target="_blank">Peter_Haggard_Robotics_Intern_Resume.pdf</a> (Upload this PDF to your repo for the link to work)</p>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Bootstrap JS (updated to match CSS) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Custom scripts (enhanced for smooth scrolling) -->
+  <script>
+    document.querySelectorAll('a.js-scroll-trigger').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        target.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+
+</body>
+
+</html>
